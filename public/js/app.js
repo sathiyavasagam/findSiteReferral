@@ -1,11 +1,9 @@
 /**
- * Created by sathiyas on 20/3/16.
+ * Created by sathiyas on 29/10/17.
  */
 
-angular.module('customersApp', ['ngRoute', 'appRoutes', 'uploadFile','customerMgmt','ui.bootstrap','ui.grid',
-    'ui.grid.pagination',
-    'ui.grid.selection',
-    'ui.grid.expandable',
-    'ui.grid.edit',
-    'ui.grid.rowEdit',
-    'ui.grid.saveState']);
+angular.module('customersApp', ['ngRoute'])
+    .config(['$locationProvider', function($locationProvider) {
+        $locationProvider.html5Mode(true);
+
+    }])

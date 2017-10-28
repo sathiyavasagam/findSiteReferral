@@ -9,14 +9,10 @@ var customerDb = mongoose.connect(db.url);
 
 var CustomerSchema = new Schema({
 
-    id: {type: Number},
-    email: {type: String, unique: true},
-    first_name: {type: String},
-    last_name: {type: String},
-    ip: {type: String},
-    latitude: {type: Number},
-    longitude: {type: Number},
-    created_at: {type: Date}
+    id: { type: Number },
+    referer_header: { type: String },
+    referer_source: { type: String },
+    created_at: { type: Date }
 });
 
 

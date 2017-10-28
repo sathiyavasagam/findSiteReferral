@@ -1,227 +1,232 @@
-
 /* ============================
 --- Menu
 ============================= */
-span{
+
+span {
     font-family: sans-serif !important;
 }
+
 .gn-menu-main,
 .gn-menu-main ul {
-		margin: 0;
-		padding: 0;
-		background: #fff;
-		color: #000000;
-		list-style: none;
-		text-transform: none;
-		font-weight: 300;
-		line-height: 15px;
-		z-index:150;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000000;
+    list-style: none;
+    text-transform: none;
+    font-weight: 300;
+    line-height: 15px;
+    z-index: 150;
 }
 
 .gn-menu-main {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 60px;
-		font-size: 13px;
-    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 13px;
+    background-color: #007680;
 }
 
 .gn-menu-main a {
-		display: block;
-		height: 100%;
-		color: #000000;
-		text-decoration: none;
-		cursor: pointer;
+    display: block;
+    height: 100%;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .no-touch .gn-menu-main a:hover,
 .no-touch .gn-menu li.gn-search-item:hover,
 .no-touch .gn-menu li.gn-search-item:hover a {
-		background: #000000;
-		color: white;
+    background: #000000;
+    color: white;
 }
 
-.gn-menu-main > li {
-		display: block;
-		float: left;
-		height: 100%;
-		text-align: center;
+.gn-menu-main>li {
+    display: block;
+    float: left;
+    height: 100%;
+    text-align: center;
 }
+
 
 /* icon-only trigger (menu item) */
 
 .gn-menu-main li.gn-trigger {
-		position: relative;
-		width: 60px;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+    position: relative;
+    width: 60px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.gn-menu-main > li:last-child {
-		float: right;
-		border-right: none;
+.gn-menu-main>li:last-child {
+    float: right;
+    border-right: none;
 }
 
-.gn-menu-main > li > a {
-		padding: 20px 30px;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: bold;
+.gn-menu-main>li>a {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .gn-menu-main:after {
-		display: table;
-		clear: both;
-		content: "";
+    display: table;
+    clear: both;
+    content: "";
 }
 
 .gn-menu-wrapper {
-		position: fixed;
-		top: 70px;
-		bottom: 0;
-		left: 0;
-		overflow: hidden;
-		width: 60px;
-		border-top: 1px solid #c6d0da;
-		background: white;
-		-webkit-transform: translateX(-60px);
-		-moz-transform: translateX(-60px);
-		transform: translateX(-60px);
-		-webkit-transition: -webkit-transform 0.3s, width 0.3s;
-		-moz-transition: -moz-transform 0.3s, width 0.3s;
-		transition: transform 0.3s, width 0.3s;
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 60px;
+    border-top: 1px solid #c6d0da;
+    background: white;
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    transform: translateX(-60px);
+    -webkit-transition: -webkit-transform 0.3s, width 0.3s;
+    -moz-transition: -moz-transform 0.3s, width 0.3s;
+    transition: transform 0.3s, width 0.3s;
 }
 
 .gn-scroller {
-		position: absolute;
-		width: 300px;
-		height: 100%;
-        background-color: #fafafa;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: #fafafa;
 }
 
 .gn-menu {
-		border-bottom: 1px solid #c6d0da;
-		text-align: left;
-		font-size: 14px;
+    border-bottom: 1px solid #c6d0da;
+    text-align: left;
+    font-size: 14px;
 }
 
 .gn-menu li:not(:first-child),
 .gn-menu li li {
-		box-shadow: inset 0 1px #c6d0da
+    box-shadow: inset 0 1px #c6d0da
 }
 
 .gn-submenu li {
-		overflow: hidden;
-		height: 0;
-		-webkit-transition: height 0.3s;
-		-moz-transition: height 0.3s;
-		transition: height 0.3s;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
 }
 
 .gn-submenu li a {
-		color: #c1c9d1
+    color: #c1c9d1
 }
+
 
 /* placeholder */
 
 .gn-search::-webkit-input-placeholder {
-		color: #000000
+    color: #000000
 }
 
 .gn-search:-moz-placeholder {
-		color: #000000
+    color: #000000
 }
 
 .gn-search::-moz-placeholder {
-		color: #000000
+    color: #000000
 }
 
 .gn-search:-ms-input-placeholder {
-		color: #000000
+    color: #000000
 }
+
 .gn-menu-main a.gn-icon-search {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
 }
 
 .gn-icon::before {
-		display: inline-block;
-		width: 60px;
-		text-align: center;
-		text-transform: none;
-		font-weight: normal;
-		font-style: normal;
-		font-variant: normal;
-		font-family: 'ecoicons';
-		line-height: 1;
-		speak: none;
-		-webkit-font-smoothing: antialiased;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'ecoicons';
+    line-height: 1;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
 }
+
 
 /* if an icon anchor has a span, hide the span */
 
 .gn-icon span {
-		width: 0;
-		height: 0;
-		display: block;
-		overflow: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
 }
 
 .gn-icon-menu::before {
-		margin-left: -15px;
-		vertical-align: -2px;
-		width: 30px;
-		height: 3px;
-		background: #000000;
-		box-shadow: 0 3px white, 0 -6px #000000, 0 -9px white, 0 -12px #000000;
-		content: '';
+    margin-left: -15px;
+    vertical-align: -2px;
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    box-shadow: 0 3px white, 0 -6px #000000, 0 -9px white, 0 -12px #000000;
+    content: '';
 }
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
-		background: white;
-		box-shadow: 0 3px #000000, 0 -6px white, 0 -9px #000000, 0 -12px white;
+    background: white;
+    box-shadow: 0 3px #000000, 0 -6px white, 0 -9px #000000, 0 -12px white;
 }
 
 .gn-icon-menu.gn-selected::before {
-		background: #000000;
-		box-shadow: 0 3px white, 0 -6px #000000, 0 -9px white, 0 -12px #000000;
-
+    background: #000000;
+    box-shadow: 0 3px white, 0 -6px #000000, 0 -9px white, 0 -12px #000000;
 }
 
+
 /* styles for opening menu */
+
 .gn-menu-wrapper.gn-open-all,
 .gn-menu-wrapper.gn-open-part {
-		-webkit-transform: translateX(0px);
-		-moz-transform: translateX(0px);
-		transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
 }
 
 .gn-menu-wrapper.gn-open-all {
-		width: 300px
+    width: 300px
 }
 
 .gn-menu-wrapper.gn-open-all .gn-submenu li {
-		height: 60px
+    height: 60px
 }
 
 @media screen and (max-width: 422px) {
-	.gn-menu-wrapper.gn-open-all {
-			-webkit-transform: translateX(0px);
-			-moz-transform: translateX(0px);
-			transform: translateX(0px);
-			width: 100%;
-	}
-
-	.gn-menu-wrapper.gn-open-all .gn-scroller {
-			width: 130%
-	}
+    .gn-menu-wrapper.gn-open-all {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+        width: 100%;
+    }
+    .gn-menu-wrapper.gn-open-all .gn-scroller {
+        width: 130%
+    }
 }
