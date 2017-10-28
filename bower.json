@@ -1,0 +1,22 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-bootstrap": "~0.13.4",
+    "angular-google-maps": "~2.2.0",
+    "angular-mocks": "~1.4.5",
+    "angular-route": "latest",
+    "angular-spinner": "~0.6.2",
+    "angular-ui-grid": "~3.0.6",
+    "bootstrap": "latest",
+    "ng-file-upload": "~7.0.17",
+    "ng-file-upload-shim": "~7.0.17",
+    "ngmap": "~1.13.4",
+    "spin.js": "~2.3.2"
+  },
+  "resolutions": {
+    "spin.js": "~2.0.0",
+    "angular": "1.5.0"
+  }
+}
